@@ -8,7 +8,7 @@ import qs from 'qs';
 
 const UsersRepo = AppDataSource.getRepository(Users)
 const KAKAO_REST_API_KEY = '30f0ecb6a33ec395f914133052bc85a2'
-const REDIRECT_URI = 'http://localhost:3000/api/auth/kakao'
+const REDIRECT_URI = 'http://pystudy.duckdns.org/api/auth/kakao'
 
 export default async function handler(
     req: NextApiRequest,
