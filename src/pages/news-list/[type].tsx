@@ -4,7 +4,7 @@ import { Box, Card, CardActionArea, CardContent, CardMedia, Stack, Typography } 
 import { useRouter } from "next/router"
 import useSWR from "swr"
 
-export default function () {
+export default function NewsListType() {
     const router = useRouter()
     const { type } = router.query
     const { data } = useSWR<News[]>(type ? `/api/news-list/${type}` : null)

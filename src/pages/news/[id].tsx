@@ -3,7 +3,7 @@ import { News } from "@/server/entity/news"
 import { useRouter } from "next/router"
 import useSWR from "swr"
 
-export default function () {
+export default function NewsId() {
     const router = useRouter()
     const { id } = router.query
     const { data } = useSWR<News>(id ? `/api/news/${id}` : null)
