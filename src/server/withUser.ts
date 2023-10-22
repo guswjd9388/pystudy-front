@@ -7,7 +7,7 @@ export const SessionOption: IronSessionOptions = {
     cookieOptions: {
         maxAge: 2147483647, // infinity
         secure: false,
-        domain: process.env.NODE_ENV === 'production' ? 'pystudy.dnsduck.org' : 'localhost'
+        domain: process.env.NODE_ENV === 'production' ? 'pystudy.duckdns.org' : 'localhost'
     }
 }
 
