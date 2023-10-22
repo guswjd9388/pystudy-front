@@ -1,13 +1,13 @@
+import Paths from "@/utils/Paths";
 import { Box, ButtonBase, Container, Grid, Paper, Typography } from "@mui/material";
 
-const REDIRECT_URI = 'http://pystudy.duckdns.org/api/auth/kakao'
 export default function _Home() {
     const onLoginClick = () => {
         const Kakao = (window as any)['Kakao'] as any
         Kakao.cleanup()
         Kakao.init('37a1d32cb672b54954066d501a38381c')
         Kakao.Auth.authorize({
-            redirectUri: REDIRECT_URI,
+            redirectUri: Paths.REDIRECT_URI,
         });
     }
     return (

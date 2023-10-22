@@ -15,6 +15,7 @@
     "@mui/material": "^5.14.11",
     "@mui/styled-engine-sc": "^5.14.11",
     "axios": "^1.5.1",
+    "iron-session": "^6.3.1",
     "mysql": "^2.18.1",
     "next": "13.5.4",
     "qs": "^6.11.2",
