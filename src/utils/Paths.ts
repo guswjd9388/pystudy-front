@@ -7,7 +7,7 @@ export default class Paths {
         return `${this.HOST}/api/auth/kakao`
     }
     static get PYTHON_SERVER_PATH() {
-        return 'http://127.0.0.1:8000'
+        return 'http://localhost:8000'
     }
     static get PYTHON_NOTICE_START() {
         return `${this.PYTHON_SERVER_PATH}/api/batch/notice/start`
